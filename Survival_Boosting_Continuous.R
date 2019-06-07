@@ -1,7 +1,7 @@
-Survival_Boosting = function(data, tree_depth = 10, n_rounds = 50, verbose = TRUE,
+Survival_Boosting_Continuous = function(data, tree_depth = 10, n_rounds = 50, verbose = TRUE,
                              control = NULL, horizon=median(data$Survival),subsample=TRUE,frac=0.8){
   """
-  Fit prediction model to time-to-event data
+  Fit prediction model to time-to-event data with continuous error function
   Inputs:
   - data: R data frame with time to event information coded -Survival- and event indicator coded -Status- 
   - tree_depth: the maximum depth of each tree in the ensemble
