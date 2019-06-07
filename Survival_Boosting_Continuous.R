@@ -1,19 +1,19 @@
 Survival_Boosting_Continuous = function(data, tree_depth = 10, n_rounds = 50, verbose = TRUE,
                              control = NULL, horizon=median(data$Survival),subsample=TRUE,frac=0.8){
-  """
-  Fit prediction model to time-to-event data with continuous error function
-  Inputs:
-  - data: R data frame with time to event information coded -Survival- and event indicator coded -Status- 
-  - tree_depth: the maximum depth of each tree in the ensemble
-  - n_rounds: number of boosting rounds
-  - control: rpart.control object to further specify the construction of each tree
-  - horizon: the time horizon to be optimized, if NULL all time horizons considered
-  - subsample: whether to subsample the data before fitting trees
-  - frac: subsampling fraction
+  
+  #Fit prediction model to time-to-event data with continuous error function
+  #Inputs:
+  #- data: R data frame with time to event information coded -Survival- and event indicator coded -Status- 
+  #- tree_depth: the maximum depth of each tree in the ensemble
+  #- n_rounds: number of boosting rounds
+  #- control: rpart.control object to further specify the construction of each tree
+  #- horizon: the time horizon to be optimized, if NULL all time horizons considered
+  #- subsample: whether to subsample the data before fitting trees
+  #- frac: subsampling fraction
 
-  Outputs:
-  - fitted model with all estimated parameters
-  """
+  #Outputs:
+  #- fitted model with all estimated parameters
+  
   
   library(pec)
   library(party)
