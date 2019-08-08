@@ -10,3 +10,8 @@ In this project we present a new approach to ensemble learning for risk prognosi
 
 * R version 3.5
 * Packages: "pec","rpart","party","survival"
+
+## First steps
+To get started, check demo.R which will guide you through an application of our algorithm. 
+
+If you have questions or comments about anything regarding this work, please do not hesitate to contact [Alexis](https://alexisbellot.github.io/Website/)
